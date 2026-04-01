@@ -1,3 +1,77 @@
-body {
-  background-color: #f3fff3;
+html, body {
+  height: 100%;
+  margin: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("tlo.png");
+
+}
+
+.todo-box {
+  width: 400px;
+  background-color: #c19fad;
+  padding: 20px;
+  border: solid 2px #000;
+  box-shadow: 10px 10px #dabac7;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#list {
+  max-height: 300px;
+  padding: 10px;
+  background-color: #dabac7;
+}
+
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 9px;
+  border: dashed 1px #000;
+}
+
+.task-text {
+  margin-left: 3px;
+}
+
+button {
+  padding: 3px 10px;
+  cursor: pointer;
+  border: solid 1px #eddde3;
+  background: #eddde3;
+  font-family: "Lucida Console", "Courier New", monospace;
+  white-space: nowrap;
+}
+
+#search {
+  border: solid 1px #eddde3;
+  padding: 5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#addPanel {
+  display: flex;
+  gap: 4px;
+}
+
+#addPanel input {
+  flex: 1;
+  border: solid 1px #eddde3;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+#taskDate {
+  font-family: "Lucida Console", "Courier New", monospace;
+  border: solid 1px #eddde3;
+}
+
