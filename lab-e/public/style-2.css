@@ -1,0 +1,185 @@
+.header {
+    margin: 2px 8px 2px 2px;
+    grid-template-rows: 30px 100px;
+    padding-left: 40px;
+    display: grid;
+}
+
+h1 {
+    border-left: 15px black solid;
+    padding-left: 2px;
+    font-family: Arial, Arial, sans-serif;
+}
+
+h2 {
+    border-bottom: 2px white solid;
+}
+
+h3 {
+    border-bottom: 2px white solid;;
+}
+
+p {
+    text-align: left
+}
+body {
+    background-image: url("zdjecietlo.jpg");
+    background-size: 70% auto;
+    background-position: center;
+    backdrop-filter: grayscale(100%);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.div1 {
+    background-color: #0c0c0c;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: right;
+    padding: 16px 10px 16px 16px;
+    margin-left: 500px;
+    margin-right: 0;
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Arial, Arial, sans-serif;
+
+}
+
+.list {
+    background-color: #0c0c0c;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-left: 1px;
+    text-align: left;
+    padding: 16px 16px 10px 16px;
+    margin-left: 0;
+    margin-right: 500px;
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Arial, Arial, sans-serif;
+
+}
+
+.div4 {
+    background-color: #0c0c0c;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    text-align: left;
+    padding: 16px 16px 10px 16px;
+    margin-left: 0;
+    margin-right: 500px;
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Arial, Arial, sans-serif;
+
+
+}
+
+.div5 {
+    background-color: #0c0c0c;
+    color: white;
+
+    text-align: right;
+    margin-left: 500px;
+    margin-right: 0;
+    width: fit-content;
+    margin-top: 40px;
+    padding: 16px 10px 16px 16px;
+    margin-bottom: 40px;
+    font-family: Arial, Arial, sans-serif;
+
+}
+
+.div6 {
+    background-color: #0c0c0c;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 500px;
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 16px 16px 10px 16px;
+    font-family: Arial, Arial, sans-serif;
+
+}
+
+footer {
+    background-color: #0c0c0c;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 16px;
+    font-family: Arial, Arial, sans-serif;
+
+}
+
+.footertekst {
+    font-family: Arial, Arial, sans-serif;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .div1, .div5 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: 0;
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+        width: 90vw;
+        min-width: 0;
+    }
+
+    .list, .div4, .div6 {
+        margin: 20px 5vw 20px 0;
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+        width: 90vw;
+        min-width: 0;
+    }
+
+
+    body {
+        background-image: url("zdjecietlo.jpg");
+        background-size: 80% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        font-size: 22px;
+        word-break: break-word;
+    }
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
