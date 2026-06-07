@@ -1,3 +1,157 @@
-body {
-    background-color: skyblue;
+:root {
+    --bs-body-font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --main-bg: #0f111a;
+    --card-bg: #1a1d29;
+    --accent-purple: #6f42c1;
+    --accent-neon: #d63384;
+    --text-muted: #a0aec0;
 }
+
+body {
+    background-color: var(--main-bg);
+    color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: var(--card-bg) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 3rem;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #FF0059;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.custom-music-table {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.custom-music-table th {
+    background-color: rgba(111, 66, 193, 0.15);
+    color: var(--accent-neon);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgba(111, 66, 193, 0.3);
+}
+
+.custom-music-table td {
+    background-color: rgba(111, 66, 193, 0.3);
+    color: #ffffff ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) ;
+    vertical-align: middle;
+}
+
+.custom-music-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03) ;
+    transition: background-color 0.2s ease;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--accent-purple), #522793);
+    border: none;
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.3);
+}
+
+.btn-primary-p {
+    background: linear-gradient(45deg, rgb(255 0 89 / 0.96), #97003c);
+    border: none;
+    box-shadow: 0 4px 12px rgb(121 22 57 / 0.3);
+}
+
+
+
+.btn-primary-p:hover {
+    background: linear-gradient(45deg, #97003c, #740430);
+    box-shadow: 0 6px 20px rgb(137 16 45 / 0.5);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #7d4fcc, var(--accent-purple));
+    box-shadow: 0 6px 20px rgba(111, 66, 193, 0.5);
+}
+
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 0 3px rgba(111, 66, 193, 0.25);
+    color: #ffffff;
+}
+
+.form-label {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+
+.site-footer {
+    margin-top: auto;
+    background-color: #0b0c11;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.card {
+    background-color: #6F42C14D ;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #ffffff ;
+}
+
+.card-header {
+    background-color: rgba(255, 255, 255, 0.02) ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) ;
+    color: #ffffff ;
+}
+
+
+
+.text-muted-custom {
+    color: var(--accent-neon);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+

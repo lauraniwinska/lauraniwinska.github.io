@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Music index{% endblock %}
+
+{% block body %}
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Music index</h1>
+        <a href="{{ path('app_music_new') }}" class="btn btn-primary">Create new</a>
+    </div>
+
+    {% if music %}
+        <div class="table-responsive">
+            <table class="table custom-music-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Content</th>
+                        <th scope="col" class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in music %}
+                        <tr>
+                            <td class="align-middle">#{{ item.id }}</td>
+                            <td class="align-middle"><strong>{{ item.Title }}</strong></td>
+                            <td class="align-middle">{{ item.content|length > 60 ? item.content|slice(0, 60) ~ '...' : item.content }}</td>
+                            <td class="align-middle">
+                                <div class="actions justify-content-center">
+                                    <a href="{{ path('app_music_show', {'id': item.id}) }}" class="btn btn-primary">Show</a>
+                                    <a href="{{ path('app_music_edit', {'id': item.id}) }}" class="btn btn-primary-p">Edit</a>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <div class="alert alert-info" role="alert">
+            <strong>No records found.</strong> There are no music records yet.
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Music Details{% endblock %}
+
+{% block body %}
+    <div class="mb-4">
+        <h1>Music Details</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+
+                <div class="card-header">
+                    <h5 class="mb-0" style="font-size: 1rem; font-weight: 600;">Music Information</h5>
+                </div>
+
+                <div class="card-body d-flex flex-column gap-3">
+
+                    <div class="row align-items-center py-1">
+                        <div class="col-sm-3">
+                            <span class="text-muted-custom">Id</span>
+                        </div>
+                        <div class="col-sm-9 text-white">
+                            #{{ music.id }}
+                        </div>
+                    </div>
+                    <hr style="border-color: rgba(255,255,255,0.08); margin: 0;">
+
+                    <div class="row align-items-center py-1">
+                        <div class="col-sm-3">
+                            <span class="text-muted-custom">Title</span>
+                        </div>
+                        <div class="col-sm-9 text-white fs-5">
+                            <strong>{{ music.Title }}</strong>
+                        </div>
+                    </div>
+                    <hr style="border-color: rgba(255,255,255,0.08); margin: 0;">
+
+                    <div class="row align-items-center py-1">
+                        <div class="col-sm-3">
+                            <span class="text-muted-custom">Content</span>
+                        </div>
+                        <div class="col-sm-9 text-white">
+                            {{ music.content }}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-4 d-flex gap-2 flex-wrap">
+        <a href="{{ path('app_music_index') }}" class="btn btn-secondary">Back to list</a>
+        <a href="{{ path('app_music_edit', {'id': music.id}) }}" class="btn btn-primary">Edit</a>
+    </div>
+
+    <div class="mt-3">
+        {{ include('music/_delete_form.html.twig') }}
+    </div>
+{% endblock %}
