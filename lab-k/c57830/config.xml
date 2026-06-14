@@ -10,4 +10,10 @@
     <content src="weather.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+
+    <platform name="electron">
+    <icon src="res/electron/ikonka.png" />
+        <preference name="ElectronSettingsFilePath" value="res/electron/settings.json" />
+</platform>
+
 </widget>
