@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Edit Music
+{% endblock %}
+
+{% block content %}
+
+<h1>Edit Music</h1>
+
+<form method="post">
+
+{% include 'music/_form.html' %}
+
+</form>
+
+<ul>
+
+<a href="/music">
+    Back to list
+</a>
+
+
+<a href="/music/{{ music.id }}/delete">
+    Delete
+</a>
+
+</ul>
+
+{% endblock %}

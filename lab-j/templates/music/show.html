@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{ music.subject }}
+{% endblock %}
+
+{% block content %}
+
+<h1>{{ music.subject }}</h1>
+
+<article>
+    {{ music.content }}
+</article>
+
+<ul>
+
+<a href="/music"> Back to list </a>
+
+<a href="/music/{{ music.id }}/edit"> Edit </a>
+
+</ul>
+
+{% endblock %}

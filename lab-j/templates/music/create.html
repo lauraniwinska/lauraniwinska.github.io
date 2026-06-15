@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Create Music
+{% endblock %}
+
+{% block content %}
+
+<h1>Create Music</h1>
+
+<form method="post">
+
+{% set music = none %}
+{% include 'music/_form.html' %}
+
+</form>
+
+<a href="/music"> Back to list </a>
+
+{% endblock %}

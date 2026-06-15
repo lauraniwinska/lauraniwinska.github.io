@@ -1,0 +1,29 @@
+<div>
+
+<label for="subject">
+    Title
+</label>
+
+<input
+        type="text"
+        id="subject"
+        name="subject"
+        value="{{ music.subject if music else '' }}">
+
+</div>
+
+<div>
+
+<label for="content">
+    Content
+</label>
+
+<textarea
+        id="content"
+        name="content">{{ music.content if music else '' }}</textarea>
+
+</div>
+
+<div>
+    <input type="submit" value="Submit">
+</div>

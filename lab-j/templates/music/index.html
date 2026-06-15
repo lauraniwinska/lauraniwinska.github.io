@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Music List
+{% endblock %}
+
+{% block content %}
+
+<h1>Music List</h1>
+
+<a href="/music/create"> Create new music </a>
+
+<ul>
+{% for music in music_list %}
+<li>
+
+<h3>{{ music.subject }}</h3>
+
+<ul>
+<a href="/music/{{ music.id }}">Details </a>
+<a href="/music/{{ music.id }}/edit"> Edit</a>
+<a href="/music/{{ music.id }}/delete"> Delete </a>
+</ul>
+
+</li>
+
+{% endfor %}
+</ul>
+{% endblock %}
